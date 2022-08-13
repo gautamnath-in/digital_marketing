@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 90vw;
+    margin: 40px auto 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p,
+.list-item:not(:first-child) {
+    color: #828282;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 60px;
+}
+
+.grow-list {
+    justify-self: start;
+    align-self: center;
+}
+
+.button-group {
+    justify-self: end;
+}
+
+.button-group .nav-button {
+    padding: 20px 40px;
+}
+
+.navbar-container img {
+    height: 40px
+}
+
+ul.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding: 0;
+    grid-column-gap: 50px;
+    color: #000;
+}
+
+/* ------------------------------ */
+/* ---------- Context ------------ */
+/* ------------------------------ */
+.banner-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* grid-column-gap: 39px; */
+}
+
+.banner-container div:first-child {
+    position: relative;
+    top: 70px;
+}
+
+.banner-container div:last-child {
+    position: absolute;
+    right: -87px;
+}
+
+.heading-text {
+    font-size: 66px;
+    color: #3c2f60;
+    margin-bottom: 26px;
+}
+
+.heading-text span {
+    color: #5955b3;
+}
+
+.description {
+    margin-bottom: 70px;
+}
+
+/* ------------------------------ */
+/* ---------- Button ------------ */
+/* ------------------------------ */
+button {
+    background: #5955b3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    appearance: none;
+    border-radius: 12px;
+}
+
+.nav-button.btn {
+    padding: 26px 52px;
+}
